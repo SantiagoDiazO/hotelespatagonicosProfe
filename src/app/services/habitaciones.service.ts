@@ -17,15 +17,10 @@ export class HabitacionesService {
     return this.servicioHabitacion.get(uri)
   }
 
-  public BuscarHabitacion(){
-
+  public RegistrarHabitacion(datos:any):Observable<any>{
+    let endpoint = "/registrarhabitacion"
+    let uri = this.url+endpoint
+    return this.servicioHabitacion.post(uri, datos)
   }
 
-  public RegistrarHabitacion(){
-
-  }
-
-  public EditarHabitacion(){
-    
-  }
 }

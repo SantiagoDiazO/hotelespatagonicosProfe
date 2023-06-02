@@ -17,19 +17,10 @@ export class ReservasService {
     return this.servicioHabitacion.get(uri)
   }
 
-  public BuscarReserva(){
-
+  public RegistrarReserva(datos:any):Observable<any>{
+    let endpoint = "/registrarreserva"
+    let uri = this.url+endpoint
+    return this.servicioHabitacion.post(uri, datos)
   }
-
-  public RegistrarReserva(){
-
-  }
-
-  public EditarReserva(){
-    
-  }
-
-  public EliminarReserva(){
-    
-  }
+  
 }
