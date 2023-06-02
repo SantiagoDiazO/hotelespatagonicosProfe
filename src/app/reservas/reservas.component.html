@@ -11,14 +11,14 @@
     <div class="row row-cols-1 row-cols-md-4 mt-5 g-2">
         <div class="col" *ngFor="let reserva of reservas">
             <div class="card h-100 shadow text-center p-3">
-                <h4>{{reserva.nombreCliente}}</h4>
-                <h6>{{reserva.apellidoCliente}}</h6>
-                <h6>{{reserva.telefono}}</h6>
-                <h6>{{reserva.fechaInicio}}</h6>
-                <h6>{{reserva.fechaFinal}}</h6>
-                <h6>{{reserva.cantidadPersonas}}</h6>
-                <h6>{{reserva.idHabitacion}}</h6>
-                <h6>{{reserva.costoReserva}}</h6>
+                <h4>Nombre: {{reserva.nombreCliente}}</h4>
+                <h6>Apellido: {{reserva.apellidoCliente}}</h6>
+                <h6>Telefono: {{reserva.telefono}}</h6>
+                <h6>Fecha Inicio: {{reserva.fechaInicio}}</h6>
+                <h6>Fecha Final: {{reserva.fechaFinal}}</h6>
+                <h6>Cantidad Personas: {{reserva.cantidadPersonas}}</h6>
+                <h6>Habitacion: {{reserva.idHabitacion}}</h6>
+                <h6>Costo: {{reserva.costoReserva}}</h6>
             </div>
         </div>
     </div>

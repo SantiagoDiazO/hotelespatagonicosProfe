@@ -9,7 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReservasComponent } from './reservas/reservas.component'
+import { ReservasComponent } from './reservas/reservas.component';
+import { FormulariohabitacionComponent } from './formulariohabitacion/formulariohabitacion.component';
+import { FormularioreservaComponent } from './formularioreserva/formularioreserva.component'
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { ReservasComponent } from './reservas/reservas.component'
     FooterComponent,
     HabitacionesComponent,
     RoomsComponent,
-    ReservasComponent
+    ReservasComponent,
+    FormulariohabitacionComponent,
+    FormularioreservaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
